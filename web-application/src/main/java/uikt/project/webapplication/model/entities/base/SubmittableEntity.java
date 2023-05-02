@@ -1,13 +1,13 @@
-package com.example.ailearningplatform.model.entities.base;
+package uikt.project.webapplication.model.entities.base;
 
 
-import com.example.ailearningplatform.model.entities.grades.Grade;
-import com.example.ailearningplatform.model.entities.users.Instructor;
-import com.example.ailearningplatform.model.entities.users.Student;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import uikt.project.webapplication.model.entities.grades.Grade;
+import uikt.project.webapplication.model.entities.users.Instructor;
+import uikt.project.webapplication.model.entities.users.Student;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -27,23 +27,23 @@ public abstract class SubmittableEntity {
     private LocalDateTime submissionDate;
 
     @ManyToOne(optional = false)
-    @JoinColumn(name = "id")
+    @JoinColumn(name = "submitted_by_student_id")
     private Student submittedBy;
 
     @ManyToOne(optional = false)
-    @JoinColumn(name = "id")
+    @JoinColumn(name = "assignted_to_student_id")
     private Student assignedTo;
 
     @ManyToOne
-    @JoinColumn(name = "id")
+    @JoinColumn(name = "graded_by_instructor_id")
     private Instructor gradedBy;
 
-    @ManyToOne(optional = false)
-    @JoinColumn(name = "id")
+    @ManyToOne
+    @JoinColumn(name = "assigned_by_instructor_id")
     private Instructor assignedBy;
 
     @ManyToOne
-    @JoinColumn(name = "id")
+    @JoinColumn(name = "grade_id")
     private Grade grade;
 
 }

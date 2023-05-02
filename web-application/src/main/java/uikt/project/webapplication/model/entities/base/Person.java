@@ -1,11 +1,12 @@
-package com.example.ailearningplatform.model.entities.base;
+package uikt.project.webapplication.model.entities.base;
 
-import com.example.ailearningplatform.model.entities.locations.Address;
-import com.example.ailearningplatform.model.enumerations.AcademicStatus;
+
+
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import uikt.project.webapplication.model.enumerations.AcademicStatus;
 
 import java.time.LocalDate;
 import java.util.Set;

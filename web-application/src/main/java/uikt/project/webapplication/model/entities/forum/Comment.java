@@ -1,12 +1,11 @@
-package com.example.ailearningplatform.model.entities.forum;
+package uikt.project.webapplication.model.entities.forum;
 
-
-import com.example.ailearningplatform.model.entities.base.AttachableEntity;
-import com.example.ailearningplatform.model.entities.base.User;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import uikt.project.webapplication.model.entities.base.AttachableEntity;
+import uikt.project.webapplication.model.entities.base.User;
 
 import java.time.LocalDate;
 

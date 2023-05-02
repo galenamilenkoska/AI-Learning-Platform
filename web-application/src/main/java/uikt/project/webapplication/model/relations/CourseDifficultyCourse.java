@@ -1,11 +1,11 @@
-package com.example.ailearningplatform.model.relations;
+package uikt.project.webapplication.model.relations;
 
-import com.example.ailearningplatform.model.entities.courses.Course;
-import com.example.ailearningplatform.model.entities.courses.CourseDifficulty;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import uikt.project.webapplication.model.entities.courses.Course;
+import uikt.project.webapplication.model.entities.courses.CourseDifficulty;
 
 @Entity
 @Data
@@ -18,11 +18,11 @@ public class CourseDifficultyCourse {
     private Long id;
 
     @ManyToOne(optional = false)
-    @JoinColumn(name = "id")
+    @JoinColumn(name = "course_id")
     private Course course;
 
     @ManyToOne(optional = false)
-    @JoinColumn(name = "id")
+    @JoinColumn(name = "course_difficulty_id")
     private CourseDifficulty courseDifficulty;
 
 }

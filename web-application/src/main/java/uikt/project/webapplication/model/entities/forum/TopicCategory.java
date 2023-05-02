@@ -1,5 +1,4 @@
-package com.example.ailearningplatform.model.entities.forum;
-
+package uikt.project.webapplication.model.entities.forum;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

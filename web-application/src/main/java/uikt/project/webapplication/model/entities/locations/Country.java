@@ -1,4 +1,4 @@
-package com.example.ailearningplatform.model.entities.locations;
+package uikt.project.webapplication.model.entities.locations;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

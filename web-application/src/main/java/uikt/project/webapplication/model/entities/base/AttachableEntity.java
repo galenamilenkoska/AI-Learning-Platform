@@ -1,6 +1,6 @@
-package com.example.ailearningplatform.model.entities.base;
+package uikt.project.webapplication.model.entities.base;
 
-import com.example.ailearningplatform.model.entities.forum.Post;
+
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;

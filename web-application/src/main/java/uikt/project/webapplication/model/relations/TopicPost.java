@@ -1,11 +1,11 @@
-package com.example.ailearningplatform.model.relations;
+package uikt.project.webapplication.model.relations;
 
-import com.example.ailearningplatform.model.entities.forum.Post;
-import com.example.ailearningplatform.model.entities.forum.Topic;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import uikt.project.webapplication.model.entities.forum.Post;
+import uikt.project.webapplication.model.entities.forum.Topic;
 
 @Data
 @Entity
@@ -18,10 +18,10 @@ public class TopicPost {
     private Long id;
 
     @ManyToOne(optional = false)
-    @JoinColumn(name = "id")
+    @JoinColumn(name = "topic_id")
     private Topic topic;
 
     @ManyToOne(optional = false)
-    @JoinColumn(name = "id")
+    @JoinColumn(name = "post_id")
     private Post post;
 }

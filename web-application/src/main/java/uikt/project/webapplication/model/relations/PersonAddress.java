@@ -1,11 +1,11 @@
-package com.example.ailearningplatform.model.relations;
+package uikt.project.webapplication.model.relations;
 
-import com.example.ailearningplatform.model.entities.locations.Address;
-import com.example.ailearningplatform.model.entities.base.Person;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import uikt.project.webapplication.model.entities.base.Person;
+import uikt.project.webapplication.model.entities.locations.Address;
 
 @Data
 @Entity
@@ -18,10 +18,10 @@ public class PersonAddress {
     private Long id;
 
     @ManyToOne(optional = false)
-    @JoinColumn(name = "id")
+    @JoinColumn(name = "person_id")
     private Person person;
 
     @ManyToOne(optional = false)
-    @JoinColumn(name = "id")
+    @JoinColumn(name = "address_id")
     private Address address;
 }

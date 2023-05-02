@@ -1,11 +1,11 @@
-package com.example.ailearningplatform.model.entities.grades;
+package uikt.project.webapplication.model.entities.grades;
 
 
-import com.example.ailearningplatform.model.entities.base.AttachableEntity;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import uikt.project.webapplication.model.entities.base.AttachableEntity;
 
 
 @Data

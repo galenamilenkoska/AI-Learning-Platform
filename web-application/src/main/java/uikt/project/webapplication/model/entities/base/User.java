@@ -1,13 +1,15 @@
-package com.example.ailearningplatform.model.entities.base;
+package uikt.project.webapplication.model.entities.base;
 
-import com.example.ailearningplatform.model.enumerations.UserRole;
+
 import jakarta.persistence.*;
 import lombok.Data;
+import uikt.project.webapplication.model.enumerations.UserRole;
 
 import java.time.LocalDate;
 
 @Data
 @Entity
+@Table(name = "\"user\"")
 public class User {
 
     @Id
@@ -33,7 +35,7 @@ public class User {
     private UserRole userRole;
 
     @OneToOne
-    @JoinColumn(name = "id")
+    @JoinColumn(name = "person_id")
     private Person person;
 
 

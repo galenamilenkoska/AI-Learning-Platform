@@ -1,12 +1,12 @@
-package com.example.ailearningplatform.model.entities.courses;
+package uikt.project.webapplication.model.entities.courses;
 
 
-import com.example.ailearningplatform.model.entities.base.AttachableEntity;
-import com.example.ailearningplatform.model.entities.grades.Quiz;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import uikt.project.webapplication.model.entities.base.AttachableEntity;
+import uikt.project.webapplication.model.entities.grades.Quiz;
 
 @Data
 @Entity
@@ -28,11 +28,11 @@ public class Lecture extends AttachableEntity implements Comparable<Lecture>{
     private boolean isCompleted;
 
     @ManyToOne(optional = false)
-    @JoinColumn(name = "id")
+    @JoinColumn(name = "course_id")
     private Course course;
 
     @OneToOne(optional = false)
-    @JoinColumn(name = "id")
+    @JoinColumn(name = "quiz_id")
     private Quiz quiz;
 
     @Override

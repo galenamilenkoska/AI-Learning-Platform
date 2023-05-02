@@ -1,11 +1,11 @@
-package com.example.ailearningplatform.model.relations;
+package uikt.project.webapplication.model.relations;
 
-import com.example.ailearningplatform.model.entities.locations.City;
-import com.example.ailearningplatform.model.entities.locations.Country;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import uikt.project.webapplication.model.entities.locations.City;
+import uikt.project.webapplication.model.entities.locations.Country;
 
 @Data
 @Entity
@@ -18,10 +18,10 @@ public class CityCountry {
     private Long id;
 
     @ManyToOne(optional = false)
-    @JoinColumn(name = "id")
+    @JoinColumn(name = "city_id")
     private City city;
 
     @ManyToOne(optional = false)
-    @JoinColumn(name = "id")
+    @JoinColumn(name = "country_id")
     private Country country;
 }

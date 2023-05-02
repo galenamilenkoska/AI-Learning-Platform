@@ -1,5 +1,4 @@
-package com.example.ailearningplatform.model.entities.courses;
-
+package uikt.project.webapplication.model.entities.courses;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -16,7 +15,7 @@ public class CourseDifficulty {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "course_difficulty")
+    @Column(name = "course_difficulty", nullable = false)
     private String difficulty;
 
 }

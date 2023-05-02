@@ -1,12 +1,11 @@
-package com.example.ailearningplatform.model.relations;
+package uikt.project.webapplication.model.relations;
 
-
-import com.example.ailearningplatform.model.entities.grades.Question;
-import com.example.ailearningplatform.model.entities.grades.Quiz;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import uikt.project.webapplication.model.entities.grades.Question;
+import uikt.project.webapplication.model.entities.grades.Quiz;
 
 @Entity
 @Data
@@ -16,13 +15,13 @@ public class QuizQuesiton {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long quizQuestionId;
+    private Long id;
 
     @ManyToOne(optional = false)
-    @JoinColumn(name = "id")
+    @JoinColumn(name = "quiz_id")
     private Quiz quiz;
 
     @ManyToOne(optional = false)
-    @JoinColumn(name = "id")
+    @JoinColumn(name = "question_id")
     private Question question;
 }

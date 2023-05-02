@@ -1,4 +1,4 @@
-package com.example.ailearningplatform.model.enumerations;
+package uikt.project.webapplication.model.enumerations;
 
 public enum UserRole {
     STUDENT,

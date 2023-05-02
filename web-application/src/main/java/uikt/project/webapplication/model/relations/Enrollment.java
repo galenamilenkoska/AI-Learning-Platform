@@ -1,12 +1,11 @@
-package com.example.ailearningplatform.model.relations;
+package uikt.project.webapplication.model.relations;
 
-
-import com.example.ailearningplatform.model.entities.courses.Course;
-import com.example.ailearningplatform.model.entities.users.Student;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import uikt.project.webapplication.model.entities.courses.Course;
+import uikt.project.webapplication.model.entities.users.Student;
 
 import java.time.LocalDate;
 
@@ -21,11 +20,11 @@ public class Enrollment {
     private Long id;
 
     @ManyToOne(optional = false)
-    @JoinColumn(name = "id")
+    @JoinColumn(name = "student_id")
     private Student student;
 
     @ManyToOne(optional = false)
-    @JoinColumn(name = "id")
+    @JoinColumn(name = "course_id")
     private Course course;
 
 
