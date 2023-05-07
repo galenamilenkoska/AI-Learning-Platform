@@ -1,7 +1,5 @@
 package uikt.project.webapplication.model.entities.base;
 
-
-
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -14,7 +12,6 @@ import java.time.LocalDate;
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
-
 public class Person {
 
     @Id
@@ -56,4 +53,5 @@ public class Person {
                 ", dateOfBirth=" + dateOfBirth +
                 '}';
     }
+
 }

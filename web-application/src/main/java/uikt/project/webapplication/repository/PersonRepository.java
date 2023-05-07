@@ -5,3 +5,4 @@ import uikt.project.webapplication.model.entities.base.Person;
 
 public interface PersonRepository extends JpaRepository<Person, Long> {
 }
+
