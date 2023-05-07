@@ -41,4 +41,17 @@ public class Person {
         this.academicStatus = academicStatus;
         this.dateOfBirth = dateOfBirth;
     }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "id=" + id +
+                ", firstName='" + firstName + '\'' +
+                ", middleName='" + middleName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", academicStatus=" + academicStatus +
+                ", dateOfBirth=" + dateOfBirth +
+                '}';
+    }
+
 }

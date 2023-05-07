@@ -1,4 +1,4 @@
-package uikt.project.webapplication.model.entities.grades;
+package uikt.project.webapplication.model.entities.course_components;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
