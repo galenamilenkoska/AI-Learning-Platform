@@ -3,6 +3,7 @@ package uikt.project.webapplication.model.entities.base;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import uikt.project.webapplication.model.enumerations.UserRole;
 
 import java.time.LocalDate;
@@ -10,6 +11,7 @@ import java.time.LocalDate;
 @Data
 @Entity
 @Table(name = "\"user\"")
+@NoArgsConstructor
 public class User {
 
     @Id
@@ -38,5 +40,13 @@ public class User {
     @JoinColumn(name = "person_id")
     private Person person;
 
-
+    public User(String username, String password, String email, LocalDate dateCreated, LocalDate dateUpdated, UserRole userRole, Person person) {
+        this.username = username;
+        this.password = password;
+        this.email = email;
+        this.dateCreated = dateCreated;
+        this.dateUpdated = dateUpdated;
+        this.userRole = userRole;
+        this.person = person;
+    }
 }
