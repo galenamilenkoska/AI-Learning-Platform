@@ -28,4 +28,9 @@ public abstract class AttachableEntity {
     @Column(name = "mime_type")
     private String mimeType;
 
+    public AttachableEntity(byte[] content, String fileName, String mimeType) {
+        this.content = content;
+        this.fileName = fileName;
+        this.mimeType = mimeType;
+    }
 }

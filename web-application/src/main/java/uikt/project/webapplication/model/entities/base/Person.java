@@ -1,7 +1,5 @@
 package uikt.project.webapplication.model.entities.base;
 
-
-
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -9,13 +7,11 @@ import lombok.NoArgsConstructor;
 import uikt.project.webapplication.model.enumerations.AcademicStatus;
 
 import java.time.LocalDate;
-import java.util.Set;
 
 @Data
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
-
 public class Person {
 
     @Id
@@ -38,5 +34,11 @@ public class Person {
     @Column(name = "date_of_birth", nullable = false)
     private LocalDate dateOfBirth;
 
-
+    public Person(String firstName, String middleName, String lastName, AcademicStatus academicStatus, LocalDate dateOfBirth) {
+        this.firstName = firstName;
+        this.middleName = middleName;
+        this.lastName = lastName;
+        this.academicStatus = academicStatus;
+        this.dateOfBirth = dateOfBirth;
+    }
 }

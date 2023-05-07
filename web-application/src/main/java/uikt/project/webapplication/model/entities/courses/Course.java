@@ -17,7 +17,6 @@ import java.util.Set;
 @AllArgsConstructor
 public class Course extends AttachableEntity {
 
-
     @Column(name = "course_name", unique = true, nullable = false)
     private String name;
 
@@ -38,5 +37,13 @@ public class Course extends AttachableEntity {
     @JoinColumn(name = "instructor_id")
     private Instructor taughtBy;
 
-
+    public Course(byte[] content, String fileName, String mimeType, String name, String description, LocalDate startDate, LocalDate endDate, Administrator createdBy, Instructor taughtBy) {
+        super(content, fileName, mimeType);
+        this.name = name;
+        this.description = description;
+        this.startDate = startDate;
+        this.endDate = endDate;
+        this.createdBy = createdBy;
+        this.taughtBy = taughtBy;
+    }
 }
