@@ -4,7 +4,7 @@ import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import uikt.project.webapplication.model.entities.grades.Grade;
+import uikt.project.webapplication.model.entities.course_components.Grade;
 import uikt.project.webapplication.model.entities.users.Instructor;
 import uikt.project.webapplication.model.entities.users.Student;
 

@@ -15,10 +15,26 @@
 
                     <div class="card p-3 mb-2">
                         <div class="card-body">
-                            <form>
+                            <p  th:text="${param.error}"></p>
+                            <form method="post" action="/register">
                                 <div class="mb-4">
-                                    <label for="fullname" class="form-label mb-0 fw-semibold">Full Name</label>
-                                    <input type="fullname" name="fullname" class="form-control" id="fullname" placeholder="John Doe">
+                                    <label for="firstName" class="form-label mb-0 fw-semibold">First Name</label>
+                                    <input type="text" name="firstName" class="form-control" id="firstName" placeholder="">
+                                </div>
+
+                                <div class="mb-4">
+                                    <label for="middleName" class="form-label mb-0 fw-semibold">Middle Name</label>
+                                    <input type="text" name="middleName" class="form-control" id="middleName" placeholder="">
+                                </div>
+
+                                <div class="mb-4">
+                                    <label for="lastName" class="form-label mb-0 fw-semibold">Last Name</label>
+                                    <input type="text" name="lastName" class="form-control" id="lastName" placeholder="">
+                                </div>
+
+                                <div class="mb-4">
+                                    <label for="username" class="form-label mb-0 fw-semibold">Username</label>
+                                    <input type="text" name="username" class="form-control" id="username" placeholder="">
                                 </div>
 
                                 <div class="mb-4">
@@ -31,8 +47,25 @@
                                     <input type="password" name="password" class="form-control" id="password">
                                 </div>
 
+                                <div class="mb-4">
+                                    <label for="repeatedPassword" class="form-label mb-0 fw-semibold">Repeat password</label>
+                                    <input type="password" name="repeatedPassword" class="form-control" id="repeatedPassword">
+                                </div>
+
+                                <div class="mb-4">
+                                    <label for="dateOfBirth" class="form-label mb-0 fw-semibold">Date of birth</label>
+                                    <input type="date" name="dateOfBirth" class="form-control" id="dateOfBirth">
+                                </div>
+
+                                <div class="mb-4">
+                                    <label for="academicStatus" class="form-label mb-0 fw-semibold">Academic status</label>
+                                    <select name="academicStatus" id="academicStatus">
+                                        <option th:each="academicStatus: ${academicStatuses}" th:value="${academicStatus}" th:text="${academicStatus}"></option>
+                                    </select>
+                                </div>
+
                                 <div>
-                                    <a href="#" class="btn btn-primary w-100 btn-lg">Begin your AI journey for free</a>
+                                    <button type="submit" class="btn btn-primary w-100 btn-lg">Begin your AI journey for free</button>
                                 </div>
                             </form>
                         </div> <!--./card-body -->

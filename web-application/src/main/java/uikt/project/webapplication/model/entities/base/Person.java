@@ -9,7 +9,6 @@ import lombok.NoArgsConstructor;
 import uikt.project.webapplication.model.enumerations.AcademicStatus;
 
 import java.time.LocalDate;
-import java.util.Set;
 
 @Data
 @Entity
@@ -38,5 +37,23 @@ public class Person {
     @Column(name = "date_of_birth", nullable = false)
     private LocalDate dateOfBirth;
 
+    public Person(String firstName, String middleName, String lastName, AcademicStatus academicStatus, LocalDate dateOfBirth) {
+        this.firstName = firstName;
+        this.middleName = middleName;
+        this.lastName = lastName;
+        this.academicStatus = academicStatus;
+        this.dateOfBirth = dateOfBirth;
+    }
 
+    @Override
+    public String toString() {
+        return "Person{" +
+                "id=" + id +
+                ", firstName='" + firstName + '\'' +
+                ", middleName='" + middleName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", academicStatus=" + academicStatus +
+                ", dateOfBirth=" + dateOfBirth +
+                '}';
+    }
 }
