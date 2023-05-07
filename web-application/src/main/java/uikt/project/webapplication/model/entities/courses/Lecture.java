@@ -6,7 +6,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import uikt.project.webapplication.model.entities.base.AttachableEntity;
-import uikt.project.webapplication.model.entities.course_components.Quiz;
+import uikt.project.webapplication.model.entities.grades.Quiz;
 
 @Data
 @Entity

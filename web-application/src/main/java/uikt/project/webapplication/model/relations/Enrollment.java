@@ -1,28 +1,34 @@
-package uikt.project.webapplication.model.relations.courses;
+package uikt.project.webapplication.model.relations;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import uikt.project.webapplication.model.entities.courses.Course;
-import uikt.project.webapplication.model.entities.courses.CourseDifficulty;
+import uikt.project.webapplication.model.entities.users.Student;
 
-@Entity
+import java.time.LocalDate;
+
 @Data
+@Entity
 @NoArgsConstructor
 @AllArgsConstructor
-public class CourseDifficultyCourse {
+public class Enrollment {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @ManyToOne(optional = false)
+    @JoinColumn(name = "student_id")
+    private Student student;
+
+    @ManyToOne(optional = false)
     @JoinColumn(name = "course_id")
     private Course course;
 
-    @ManyToOne(optional = false)
-    @JoinColumn(name = "course_difficulty_id")
-    private CourseDifficulty courseDifficulty;
+
+    @Column(name = "enrollment_date", nullable = false)
+    private LocalDate enrollmentDate;
 
 }

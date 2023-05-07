@@ -10,8 +10,6 @@ import uikt.project.webapplication.model.entities.base.User;
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
-@PrimaryKeyJoinColumn(name = "user_id")
-
 public class Instructor  extends User {
 
 

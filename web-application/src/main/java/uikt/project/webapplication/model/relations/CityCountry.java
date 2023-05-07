@@ -1,4 +1,4 @@
-package uikt.project.webapplication.model.relations.location;
+package uikt.project.webapplication.model.relations;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

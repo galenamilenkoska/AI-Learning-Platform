@@ -1,11 +1,11 @@
-package uikt.project.webapplication.model.relations.course_components;
+package uikt.project.webapplication.model.relations;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import uikt.project.webapplication.model.entities.course_components.Question;
-import uikt.project.webapplication.model.entities.course_components.Quiz;
+import uikt.project.webapplication.model.entities.grades.Question;
+import uikt.project.webapplication.model.entities.grades.Quiz;
 
 @Entity
 @Data
