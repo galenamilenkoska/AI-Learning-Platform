@@ -5,6 +5,17 @@
           href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
           integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
           crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <title>Home</title>
     <style>
@@ -19,7 +30,7 @@
             right: -300px;
             width: 90%; /* set the width of the image */
             height: 90%; /* set the height of the image */
-            background-image: url("images/7087f80bd2ece91d0fde39dba5e43ab6.png"); /* replace with the actual path to your image */
+            background-image: url("static/images/7087f80bd2ece91d0fde39dba5e43ab6.png"); /* replace with the actual path to your image */
             background-size: cover;
             background-position: center;
         }
@@ -199,36 +210,36 @@
     <div class="image"></div>
     <div class="navbar">
         <ul class="left-nav">
-            <li><a href="#">Home</a></li>
+            <li><a href="/home">Home</a></li>
             <li><a href="#">Explore</a></li>
             <li><a href="#">Certification</a></li>
         </ul>
         <div class="right-nav">
         <div class="right-nav-signin">
-            <button>Sign In</button>
-            </div>
+            <a href="/login"><button>Sign In</button></a>
+        </div>
         <div class="right-nav-getstarted">
             <button>Get Started</button>
         </div>
             </div>
     </div>
     <div class="image2">
-        <img src="images/learn.png">
+        <img src="../static/images/learn.png">
     </div>
     <h1 class="h1">Artificial Intelligence Courses</h1>
     <h2 class="h2">Watch concise instructional videos by experienced<br>
         instructors and apply your knowledge with hands-on<br>
-        exercises right in your browser.</h2>br>
+        exercises right in your browser.</h2><br>
 
     <div class="icon-with-text">
         <div class="image3">
-            <img src="images/clock.png">
+            <img src="../static/images/clock.png">
         </div>
         <h5 class="text-icon">Learn at a pace that works for you</h5>
     </div>
     <div class="icon-with-text">
         <div class="image3">
-            <img src="images/participation.png">
+            <img src="../static/images/participation.png">
         </div>
         <h5 class="text-icon">Participate in practical exercises</h5>
     </div>
@@ -243,7 +254,7 @@
     <div class="course-container">
     <div class="course-card">
         <div class="course-image">
-            <img src="images/python.png">
+            <img src="http://localhost:63343/web-application/static/images/python.png">
         </div>
         <h3 class="course-title">Foundations of Artifical Intelligence</h3>
         <p class="course-description">This course introduces the fundamental concepts and techniques of artificial
@@ -251,143 +262,40 @@
         knowledge representation, reasoning, and planning.</p>
         <div class="course-classifier">
             <div class="classifier-text">
-                <img style="margin-bottom: 14px" src="images/note-taking.png">
+                <img style="margin-bottom: 14px" src="../static/images/note-taking.png">
                 <p style="margin-left: 7px">Artificial Intelligence</p>
             </div>
             <div class="classifier-text">
-                <img style="margin-bottom: 14px" src="images/coursetime.png">
+                <img style="margin-bottom: 14px" src="../static/images/coursetime.png"/>
                 <p style="margin-left: 7px">42 Hours</p>
             </div>
             <div class="classifier-text">
-                <img style="margin-bottom: 14px" src="images/professor.png">
+                <img style="margin-bottom: 14px" src="../static/images/professor.png">
                 <p style="margin-left: 7px">Anastasia Petrova</p>
             </div>
         </div>
     </div>
-    <br>
-    <div class="course-card">
-        <div class="course-image">
-            <img src="images/python.png">
-        </div>
-        <h3 class="course-title">Machine Learning Fundamentals</h3>
-        <p class="course-description">This course covers the basics of machine learning,
-        including supervised and unsupervised learning,<br>classification,
-        regression, clustering and feature selection. Students may also learn
-        how to implement machine<br>learning algorithms using popular tools and
-        frameworks such as scikit-learn and TensorFlow.</p>
-        <div class="course-classifier">
-            <div class="classifier-text">
-                <img style="margin-bottom: 14px" src="images/note-taking.png">
-                <p style="margin-left: 7px">Machine Learning</p>
-            </div>
-            <div class="classifier-text">
-                <img style="margin-bottom: 14px" src="images/coursetime.png">
-                <p style="margin-left: 7px">30 Hours</p>
-            </div>
-            <div class="classifier-text">
-                <img style="margin-bottom: 14px" src="images/professor.png">
-                <p style="margin-left: 7px">Benjamin Davis</p>
-            </div>
-        </div>
-    </div>
-    <br>
-    <div class="course-card">
-        <div class="course-image">
-            <img src="images/python.png">
-        </div>
-        <h3 class="course-title">Deep Learning and Neural Networks</h3>
-        <p class="course-description">This course explores the architecture and algorithms of deep learning
-        and neural networks, including computer<br>vision, natural language processing, and robotics.
-        Topics covered may iclude convolutional<br>neural networks, recurrect neural networks, and generative adversarial networks.</p>
-        <div class="course-classifier">
-            <div class="classifier-text">
-                <img style="margin-bottom: 14px" src="images/note-taking.png">
-                <p style="margin-left: 7px">Deep Learning</p>
-            </div>
-            <div class="classifier-text">
-                <img style="margin-bottom: 14px" src="images/coursetime.png">
-                <p style="margin-left: 7px">36 Hours</p>
-            </div>
-            <div class="classifier-text">
-                <img style="margin-bottom: 14px" src="images/professor.png">
-                <p style="margin-left: 7px">Ana Kovačič</p>
-            </div>
-        </div>
-    </div>
-    <br>
-    <div class="course-card">
-        <div class="course-image">
-            <img src="images/coffee.png">
-        </div>
-        <h3 class="course-title">Applied Artifical Intelligence</h3>
-        <p class="course-description">This course fouces on the practical applications of artificial intellingece
-        in areas such as healthcare, finance,<br>transportation, and more. Students may learn how to develop AI-based
-        solutions to real-world problems and<br>may use tools such as machine learning frameworks, chatbot platforms,
-            and intelligent agents.
-        </p>
-        <div class="course-classifier">
-            <div class="classifier-text">
-                <img style="margin-bottom: 14px" src="images/note-taking.png">
-                <p style="margin-left: 7px">Applied AI</p>
-            </div>
-            <div class="classifier-text">
-                <img style="margin-bottom: 14px" src="images/coursetime.png">
-                <p style="margin-left: 7px">30 Hours</p>
-            </div>
-            <div class="classifier-text">
-                <img style="margin-bottom: 14px" src="images/professor.png">
-                <p style="margin-left: 7px">Lukas Muller</p>
-            </div>
-        </div>
-    </div>
-    <br>
-    <div class="course-card">
-        <div class="course-image">
-            <img src="images/python.png">
-        </div>
-        <h3 class="course-title">Natural Language Processing and Understanding</h3>
-        <p class="course-description">This course covers the techniques and tools used for natural language
-            processing and understanding, which <br>is a critical component of many AI applications
-            such as chatbots, virtual assistants and sentiment analysis.<br>Topics
-            covered may include parsing, semantics, sentiment analysis, and language generation.
-        </p>
-        <div class="course-classifier">
-            <div class="classifier-text">
-                <img style="margin-bottom: 14px" src="images/note-taking.png">
-                <p style="margin-left: 7px">Natural Languages</p>
-            </div>
-            <div class="classifier-text">
-                <img style="margin-bottom: 14px" src="images/coursetime.png">
-                <p style="margin-left: 7px">44 Hours</p>
-            </div>
-            <div class="classifier-text">
-                <img style="margin-bottom: 14px" src="images/professor.png">
-                <p style="margin-left: 7px">Tyler Johnson</p>
-            </div>
-        </div>
-        </div>
-        <br>
-        <div class="course-card">
+
+
+        <div th:each="course : ${courses}" class="course-card">
             <div class="course-image">
-                <img src="images/brain.png">
+                <img src="http://localhost:63342/web-application/static/images/python.png">
             </div>
-            <h3 class="course-title">Ethics and Social Implications of AI</h3>
-            <p class="course-description">This course explores the ethical and societal considerations surrounding the development
-                and use of AI.<br>Topics covered may include bias in AI algorithms, privary concerns, the impact of AI on<br>
-                employment and the economy, and the ethical implications of autonomous systems.
-            </p>
+            <h3 class="course-title" th:text="${course.getName()}"></h3>
+            <p class="course-description" th:text="${course.getDescription()}"></p>
             <div class="course-classifier">
                 <div class="classifier-text">
-                    <img style="margin-bottom: 14px" src="images/note-taking.png">
-                    <p style="margin-left: 7px">Artificial Intelligence</p>
+                    <img style="margin-bottom: 14px" src="../static/images/note-taking.png">
+                    <p style="margin-left: 7px" th:text="${course.getStartDate()}"></p>
                 </div>
                 <div class="classifier-text">
-                    <img style="margin-bottom: 14px" src="images/coursetime.png">
-                    <p style="margin-left: 7px">16 Hours</p>
+                    <img style="margin-bottom: 14px" src="../static/images/coursetime.png">
+                    <img src="/static/images/coursetime.png">
+                    <p style="margin-left: 7px" th:text="${course.getEndDate()}"></p>
                 </div>
                 <div class="classifier-text">
-                    <img style="margin-bottom: 14px" src="images/professor.png">
-                    <p style="margin-left: 7px">Ivana Novak</p>
+                    <img style="margin-bottom: 14px" src="../static/images/professor.png">
+                    <p style="margin-left: 7px" th:text="${course.getInstructor()}"></p>
                 </div>
             </div>
         </div>
@@ -395,7 +303,7 @@
     <br>
     <br>
     <div class="pagination-container">
-        <img src="images/pagination.png">
+        <img src="../static/images/pagination.png">
     </div>
 </div>
     </div>
@@ -478,6 +386,7 @@
             </div>
         </div>
     </div>
+</div>
 </div>
 </body>
 </html>

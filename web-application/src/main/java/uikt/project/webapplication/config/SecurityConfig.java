@@ -17,7 +17,8 @@ public class SecurityConfig  {
         http
                 .csrf()
                 .disable()
-                .authorizeHttpRequests(authorize -> authorize.requestMatchers("/", "/home", "/login", "/register").permitAll())
+                .authorizeHttpRequests(authorize -> authorize.requestMatchers("/", "/home", "/login", "/register","courses","/images/**").permitAll())
+                //.authorizeHttpRequests(authorize -> authorize.antMatchers("/images/**").permitAll())
                 .authorizeHttpRequests(authorize -> authorize.requestMatchers("/admin/**").hasRole("ADMIN"))
                 .logout(logout -> logout.logoutUrl("/logout").logoutSuccessUrl("/login"))
                 .rememberMe(rememberMe -> rememberMe.userDetailsService(users));

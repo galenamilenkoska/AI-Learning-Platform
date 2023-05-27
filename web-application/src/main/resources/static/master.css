@@ -1,5 +1,5 @@
 .bg-ai-image {
-    background: url("../templates/images/bg-ai-image.jpg");
+    background: url("images/bg-ai-image.jpg");
     background-position: center;
     background-size: cover;
 }
