@@ -23,6 +23,18 @@ html {
     color: #fff;
 }
 
+.px-top-50 {
+    top: 50px;
+}
+
+.px-top-65 {
+    top: 65px;
+}
+
+.start-85 {
+    left: 85%;
+}
+
 .search-list-input {
     border: 2px solid #ccc;
     border-radius: 10rem;
@@ -101,6 +113,11 @@ html {
     color: #fff;
 }
 
+/* enrolled courses (dashboard) */
+.card-bookmark {
+    max-width: 48px;
+}
+
 /* mobile */
 @media only screen and (max-width: 850px) {
     .top-nav {
@@ -124,7 +141,13 @@ html {
         flex-direction: column;
     }
 
-    .content-header-instructor > a {
+    .content-header-instructor-profile {
+        text-align: center;
+    }
+
+    .content-header-instructor > a,
+    .content-header-course-participants > a,
+    .content-header-course-detail > a{
         margin-bottom: 10px;
     }
 
