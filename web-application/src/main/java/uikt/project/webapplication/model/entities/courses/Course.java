@@ -46,4 +46,9 @@ public class Course extends AttachableEntity {
         this.createdBy = createdBy;
         this.taughtBy = taughtBy;
     }
+
+    public String getInstructor() {
+        String instructor=taughtBy.getPerson().getFirstName()+" "+taughtBy.getPerson().getLastName();
+        return instructor;
+    }
 }

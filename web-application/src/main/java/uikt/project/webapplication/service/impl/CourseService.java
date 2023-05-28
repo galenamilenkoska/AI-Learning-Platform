@@ -46,7 +46,7 @@ public class CourseService implements ICourseService {
         course.setStartDate(courseDetails.getStartDate());
         course.setEndDate(courseDetails.getEndDate());
         course.setCreatedBy(courseDetails.getCreatedBy());
-        course.setTaughtBy(courseDetails.getTaughtBy());
+        //course.setTaughtBy(courseDetails.getTaughtBy());
 
         return courseRepository.save(course);
     }
